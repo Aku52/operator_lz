@@ -1,17 +1,15 @@
-input_data = open ('output.txt','r')
-data = input_data.read( )
-n = int(data[0])
-
-
-
-
-
-
-
-
-
-output_data = open('output.txt','w')
-output_data.write()
-
-input_data.close('output.txt','r')
-output_data.close('output.txt','w')
+#Ввод положительного числа n( 1 <= n <= 100_00)
+n = int(input())
+# c - количество операций
+c = 0
+# создаём цикл (по условию дано)
+while n != 0:
+    if n % 3 == 0:
+        n -= 3
+    elif n % 3 == 1:
+        n -= 1
+    else:  # n % 3 == 2
+        n -= 2
+    c += 1
+#Вывод в терминал
+print(c)

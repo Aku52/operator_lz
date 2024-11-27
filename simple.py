@@ -1,6 +1,5 @@
-input_data = open ('output.txt','r')
-data = input_data.read( )
-n =int(data)
+#Ввод с клавиатуры числа от 1 до 25
+n =int(input())
 # Перебираем каждое число из диапозона [1,25]
 if n == 1:
     k = "Y" 
@@ -52,9 +51,6 @@ elif n == 24:
         k = "N"
 elif n == 25:
         k = "N"
-       
-output_data = open('output.txt','w')
-output_data.write()
-
-input_data.close('output.txt','r')
-output_data.close('output.txt','w')
+        
+#Вывод в терминал
+print(k) 
